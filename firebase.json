@@ -1,0 +1,20 @@
+{
+  "functions": {
+    "predeploy": "npm --prefix \"$RESOURCE_DIR\" run release"
+  },
+  "hosting": {
+    "predeploy": "npm run release",
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "index.html",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/api/**",
+        "function": "api"
+      }
+    ]
+  }
+}
