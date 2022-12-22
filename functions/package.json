@@ -23,7 +23,7 @@
     "express": "^4.17.1",
     "firebase-admin": "~8.9.0",
     "firebase-functions": "^3.3.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "jssha": "^2.3.1",
     "jwk-to-pem": "^2.0.2",
     "uuid-parse": "^1.1.0"
